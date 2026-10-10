@@ -1,8 +1,0 @@
-/* Keep the cake photograph natural; fade the green text overlay out before the right side. */
-.hero-photo{background-position:62% 53%}
-.hero-overlay{background:linear-gradient(90deg,rgba(24,58,50,.91) 0%,rgba(24,58,50,.78) 27%,rgba(24,58,50,.38) 43%,rgba(24,58,50,.08) 55%,transparent 63%)}
-.hero-copy{max-width:540px;text-shadow:0 1px 14px rgba(0,0,0,.18)}
-@media(max-width:760px){
-  .hero-photo{background-position:68% center}
-  .hero-overlay{background:linear-gradient(90deg,rgba(24,58,50,.93) 0%,rgba(24,58,50,.78) 39%,rgba(24,58,50,.34) 59%,rgba(24,58,50,.08) 75%,transparent 86%)}
-}
