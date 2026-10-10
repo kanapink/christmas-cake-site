@@ -1,0 +1,40 @@
+/* Desktop type scale: keep body copy comfortably readable while preserving heading hierarchy. */
+@media (min-width: 1025px) {
+  body { font-size: 16px; line-height: 1.85; }
+  .button { font-size: 14px; }
+  .site-nav a { font-size: 14px; }
+  .hero-copy > p:not(.eyebrow) { font-size: 16px; }
+  .hero-caption { font-size: 11px; }
+  .eyebrow { font-size: 13px; }
+  .section-heading h2,
+  .reservation-intro h2 { font-size: 36px; }
+  .section-heading > p:last-child { font-size: 15px; }
+  .cake-premium .cake-title h3 { font-size: 30px; }
+  .cake-standard .cake-title h3 { font-size: 20px; }
+  .price { font-size: 28px; }
+  .cake-premium .price { font-size: 34px; }
+  .cake-standard .price { font-size: 25px; }
+  .description { font-size: 15px; line-height: 1.9; }
+  .cake-meta { font-size: 13px; }
+  .allergen-note { font-size: 12px; }
+  .story-content h2 { font-size: 38px; }
+  .story-lead { font-size: 15px; }
+  .values h3 { font-size: 16px; }
+  .values p { font-size: 13px; }
+  .reservation-intro > p:last-child { font-size: 15px; }
+  .reservation-form label { font-size: 14px; }
+  .reservation-form input,
+  .reservation-form select,
+  .reservation-form textarea { font-size: 15px; }
+  .payment-note { font-size: 13px; }
+  .left-heading h2 { font-size: 36px; }
+  .shop-info h3 { font-size: 22px; }
+  .shop-info h3 span { font-size: 14px; }
+  .shop-info address,
+  .shop-info dl div { font-size: 14px; }
+  .shop-info dd small,
+  .dummy-notice { font-size: 11px; }
+  .map-frame span { font-size: 11px; }
+  .site-footer p,
+  .site-footer small { font-size: 12px; }
+}

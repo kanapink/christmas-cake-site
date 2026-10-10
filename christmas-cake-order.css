@@ -1,0 +1,19 @@
+.cake-selection{grid-column:1/-1;min-width:0;margin:0;padding:0;border:0}
+.cake-selection legend{margin:0 0 9px;padding:0;color:var(--green);font-size:13px}
+.cake-options{border-bottom:1px solid var(--line)}
+.cake-option{display:grid;grid-template-columns:minmax(0,1fr) 150px;align-items:center;gap:18px;padding:11px 13px;background:var(--ivory);border:1px solid var(--line);border-bottom:0;transition:background .15s}
+.cake-option.is-checked{background:#eef1eb}
+.cake-checkbox-label{display:flex!important;flex-direction:row!important;align-items:center;gap:11px!important;cursor:pointer;color:var(--ink)!important}
+.cake-checkbox{width:20px!important;height:20px;min-height:20px!important;margin:0;flex:0 0 20px;accent-color:var(--green)}
+.option-cake-name{font-size:13px;font-weight:500}
+.option-price{font-size:13px;font-weight:600;color:var(--green);white-space:nowrap;margin-left:auto}
+.quantity-control{display:grid!important;grid-template-columns:auto 1fr;align-items:center;gap:8px!important;font-size:11px!important;white-space:nowrap}
+.cake-quantity{min-height:40px!important;padding:6px 8px!important}
+.cake-quantity:disabled{background:#f1eee8;color:#9a9287;cursor:not-allowed}
+.order-total{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:13px 15px;margin-top:10px;background:var(--green);color:var(--ivory);font-size:14px;font-weight:500}
+.order-total output{font:26px var(--display),Georgia,serif;color:var(--gold-light);white-space:nowrap}
+@media(min-width:1025px){.cake-selection legend{font-size:15px}.cake-option{padding:14px 16px}.option-cake-name,.option-price{font-size:15px}.quantity-control{font-size:13px!important}.order-total{font-size:16px;padding:15px 18px}.order-total output{font-size:29px}}
+@media(max-width:760px){.cake-selection{grid-column:1}.cake-option{grid-template-columns:1fr;gap:8px;padding:11px}.option-cake-name,.option-price{font-size:12px}.quantity-control{justify-self:end;grid-template-columns:auto 110px}.cake-quantity{min-height:42px!important}.order-total{font-size:13px}.order-total output{font-size:24px}}
+.reservation-facts{margin-top:16px}.reservation-facts p{font-size:16px;font-weight:700;line-height:1.7;color:var(--green);margin:0 0 5px}.reservation-facts .pickup-note{font-size:14px;font-weight:400;color:var(--muted);margin-top:4px}
+@media(min-width:1025px){.reservation-facts p{font-size:17px}.reservation-facts .pickup-note{font-size:15px}}
+@media(max-width:760px){.reservation-facts p{font-size:14px}.reservation-facts .pickup-note{font-size:12px}}

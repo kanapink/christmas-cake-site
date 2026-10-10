@@ -1,0 +1,13 @@
+/* Header layout override: compact two-column header below desktop width. */
+.site-header{grid-template-columns:44px 1fr}
+@media(max-width:760px){.site-header{grid-template-columns:42px 1fr}}
+/* Desktop navigation replaces the mobile/tablet hamburger dropdown. */
+@media(min-width:1025px){
+  .site-header{display:flex;padding:0 5%;gap:38px}
+  .menu-toggle{display:none}
+  .brand{justify-self:auto;margin-right:auto}
+  .header-reserve{display:none}
+  .site-nav{position:static;width:auto;padding:0;background:transparent;box-shadow:none;display:flex;flex-direction:row;align-items:center;gap:clamp(20px,3vw,42px);visibility:visible;opacity:1;transform:none;transition:none}
+  .site-nav a{padding:8px 0;border:0;font-size:12px;white-space:nowrap}
+  .site-nav a:hover{color:var(--green-2);box-shadow:0 1px var(--gold)}
+}
