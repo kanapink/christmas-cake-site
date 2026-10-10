@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="クリスマスに特別なケーキで甘い時間を。Pâtisserie Noëlのクリスマスケーキ予約ページです。">
+  <title>Christmas Cake Collection | Pâtisserie Noël</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Serif+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="christmas-cake-site.css">
+  <link rel="stylesheet" href="christmas-cake-header.css">
+  <link rel="stylesheet" href="christmas-cake-desktop-type.css">
+  <link rel="stylesheet" href="christmas-cake-order.css">
+</head>
+<body>
+  <!-- Header: header/nav/button; CSS positions hamburger at upper left; JS opens/closes navigation. -->
+  <header class="site-header">
+    <button class="menu-toggle" id="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+    <a class="brand" href="#top" aria-label="Pâtisserie Noël トップ">Pâtisserie <em>Noël</em></a>
+    <nav class="site-nav" id="site-nav" aria-label="メインメニュー">
+      <a href="#top">トップ</a><a href="#menu">メニュー</a><a href="#story">こだわり</a><a href="#reserve">ご予約はこちら</a><a href="#access">アクセス</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Top / FV: section, heading, anchor CTA; CSS hero image and dark overlay; no JS. -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-photo" role="img" aria-label="クリスマスの苺ケーキの仮画像"></div><div class="hero-overlay"></div>
+      <div class="hero-copy"><p class="eyebrow">CHRISTMAS CAKE COLLECTION</p><h1 id="hero-title">クリスマスに、<br>特別なケーキで<br>甘い時間を。</h1><p>大切な人と囲む、年に一度のひとときに。</p><a class="button button-gold" href="#menu">ケーキを見る <span aria-hidden="true">↓</span></a></div>
+      <p class="hero-caption">A SWEET MOMENT TO REMEMBER</p>
+    </section>
+
+    <!-- Menu: section/article/img; CSS gives premium card larger image and distinct background; JS adds selected item to reservation form. -->
+    <section class="menu-section section-shell" id="menu" aria-labelledby="menu-title">
+      <div class="section-heading"><p class="eyebrow eyebrow-green">CHRISTMAS COLLECTION</p><h2 id="menu-title">聖夜を彩る、3つのケーキ</h2><p>パティシエが心を込めて仕立てる、クリスマス限定の味わい。</p></div>
+      <article class="cake-card cake-premium" id="cake-premium">
+        <div class="cake-image"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1800&q=85" alt="プレミアムショートケーキの仮画像"><span class="recommend-label">NOËL<br>PREMIUM</span></div>
+        <div class="cake-info"><div class="cake-title"><div><p class="eyebrow eyebrow-green">OUR SIGNATURE</p><h3>プレミアムショートケーキ</h3></div><p class="price">¥5,000</p></div>
+          <p class="description">みずみずしい苺と、口どけなめらかなクリームを重ねた特別なショートケーキ。クリスマスの食卓を華やかに彩る、当店いちばんのおすすめです。</p>
+          <p class="cake-meta">5号サイズ <span>アレルギー：乳・卵・小麦</span></p><button type="button" class="button button-green reserve-cake" data-cake="プレミアムショートケーキ">このケーキを予約する <span aria-hidden="true">→</span></button></div>
+      </article>
+      <div class="cake-grid">
+        <article class="cake-card cake-standard"><div class="cake-image"><img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=1200&q=80" alt="スペシャルショートケーキの仮画像" loading="lazy"></div><div class="cake-info"><div class="cake-title"><h3>スペシャルショートケーキ</h3><p class="price">¥4,000</p></div><p class="description">ふんわり焼き上げたスポンジに、軽やかなクリームと苺を合わせました。みんなで楽しめる、定番のひと品。</p><p class="cake-meta">5号サイズ <span>アレルギー：乳・卵・小麦</span></p><button type="button" class="button button-outline reserve-cake" data-cake="スペシャルショートケーキ">このケーキを予約する <span>→</span></button></div></article>
+        <article class="cake-card cake-standard"><div class="cake-image"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1200&q=80" alt="スペシャルチョコレートケーキの仮画像" loading="lazy"></div><div class="cake-info"><div class="cake-title"><h3>スペシャルチョコレートケーキ</h3><p class="price">¥4,000</p></div><p class="description">カカオの香り豊かなチョコレートを楽しむ、しっとり濃厚なケーキ。大人のクリスマスにもおすすめです。</p><p class="cake-meta">5号サイズ <span>アレルギー：乳・卵・小麦</span></p><button type="button" class="button button-outline reserve-cake" data-cake="スペシャルチョコレートケーキ">このケーキを予約する <span>→</span></button></div></article>
+      </div>
+      <p class="allergen-note">※ 商品画像・説明文はサンプル用です。人数目安の掲載はありません。</p>
+    </section>
+
+    <!-- Story: section/list; CSS editorial two-column layout; no JS. -->
+    <section class="story-section" id="story" aria-labelledby="story-title"><div class="story-photo" role="img" aria-label="ケーキを仕上げるパティシエの仮画像"></div><div class="story-content"><p class="eyebrow eyebrow-green">MADE WITH CARE</p><h2 id="story-title">大切な日に、<br>大切にしたいおいしさ。</h2><p class="story-lead">素材選びから仕上げまで、ひとつひとつ丁寧に。クリスマスの思い出に残るケーキをお届けします。</p><ul class="values"><li><span>01</span><div><h3>素材の風味を大切に</h3><p>苺やクリームの味わいを活かし、バランスよく仕立てます。</p></div></li><li><span>02</span><div><h3>工房で丁寧に手づくり</h3><p>パティシエが一台ずつ心を込めて仕上げています。</p></div></li><li><span>03</span><div><h3>クリスマスだけの特別な一台</h3><p>大切な人と囲むひとときに似合う、季節限定のケーキです。</p></div></li></ul></div></section>
+
+    <!-- Reservation: form/label/select/input/textarea; CSS accessible controls; JS only validates and previews demo confirmation locally, no network submission. -->
+    <section class="reservation-section section-shell" id="reserve" aria-labelledby="reserve-title"><div class="reservation-intro"><p class="eyebrow eyebrow-green">RESERVATION</p><h2 id="reserve-title">クリスマスケーキのご予約</h2><div class="reservation-facts"><p class="reservation-period">ご予約期間：11月1日〜11月30日</p><p class="pickup-note">お受渡し当日に、店舗にてお会計後のお渡しになります。営業時間内にお越しくださいませ。</p></div></div>
+      <form id="reservation-form" class="reservation-form">
+        <label>お名前 <span class="required">必須</span><input name="name" autocomplete="name" required placeholder="例）山田 花子"></label>
+        <label>電話番号 <span class="required">必須</span><input name="phone" type="tel" autocomplete="tel" required placeholder="例）090-1234-5678"></label>
+        <fieldset class="cake-selection"><legend>ご予約のケーキ <span class="required">1種類以上選択</span></legend><div class="cake-options">
+          <div class="cake-option" data-cake="プレミアムショートケーキ" data-price="5000"><label class="cake-checkbox-label" for="cake-premium-check"><input class="cake-checkbox" id="cake-premium-check" type="checkbox" name="cakes" value="プレミアムショートケーキ"><span class="option-cake-name">プレミアムショートケーキ</span><span class="option-price">¥5,000</span></label><label class="quantity-control" for="qty-premium">個数<select class="cake-quantity" id="qty-premium" disabled><option value="1">1個</option><option value="2">2個</option><option value="3">3個</option><option value="4">4個</option><option value="5">5個</option><option value="6">6個</option><option value="7">7個</option><option value="8">8個</option><option value="9">9個</option><option value="10">10個</option></select></label></div>
+          <div class="cake-option" data-cake="スペシャルショートケーキ" data-price="4000"><label class="cake-checkbox-label" for="cake-short-check"><input class="cake-checkbox" id="cake-short-check" type="checkbox" name="cakes" value="スペシャルショートケーキ"><span class="option-cake-name">スペシャルショートケーキ</span><span class="option-price">¥4,000</span></label><label class="quantity-control" for="qty-short">個数<select class="cake-quantity" id="qty-short" disabled><option value="1">1個</option><option value="2">2個</option><option value="3">3個</option><option value="4">4個</option><option value="5">5個</option><option value="6">6個</option><option value="7">7個</option><option value="8">8個</option><option value="9">9個</option><option value="10">10個</option></select></label></div>
+          <div class="cake-option" data-cake="スペシャルチョコレートケーキ" data-price="4000"><label class="cake-checkbox-label" for="cake-choco-check"><input class="cake-checkbox" id="cake-choco-check" type="checkbox" name="cakes" value="スペシャルチョコレートケーキ"><span class="option-cake-name">スペシャルチョコレートケーキ</span><span class="option-price">¥4,000</span></label><label class="quantity-control" for="qty-choco">個数<select class="cake-quantity" id="qty-choco" disabled><option value="1">1個</option><option value="2">2個</option><option value="3">3個</option><option value="4">4個</option><option value="5">5個</option><option value="6">6個</option><option value="7">7個</option><option value="8">8個</option><option value="9">9個</option><option value="10">10個</option></select></label></div>
+        </div><div class="order-total"><span>お支払い合計</span><output id="order-total" aria-live="polite">¥0</output></div></fieldset>
+        <label>お受け取り日 <span class="required">必須</span><select name="pickup-date" required><option value="">日付を選択してください</option><option>12月23日</option><option>12月24日</option><option>12月25日</option></select></label>
+        <label class="notes-field">備考欄<textarea name="notes" rows="4" placeholder="ご要望などがあればご記入ください"></textarea></label>
+        <p class="payment-note">お受け取りは店頭でのお渡しです。お支払いは商品受取時にお願いいたします。<br>このフォームはサンプルです。入力内容は送信・保存されません。</p>
+        <button class="button button-green submit-button" type="submit">入力内容を確認する <span aria-hidden="true">→</span></button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <!-- Access: section/address/iframe; CSS responsive map; JS none. Google Maps query is a clearly fictional sample place. -->
+    <section class="access-section section-shell" id="access" aria-labelledby="access-title"><div class="section-heading left-heading"><p class="eyebrow eyebrow-green">ACCESS</p><h2 id="access-title">店舗情報・アクセス</h2><p>クリスマスケーキは店頭でお受け取りください。</p></div>
+      <div class="access-grid"><div class="shop-info"><h3>Pâtisserie Noël <span>パティスリー・ノエル</span></h3><address>〒500-0000<br>岐阜県〇〇市ノエル町1丁目2-3</address><dl><div><dt>営業時間</dt><dd>10:00〜19:00</dd></div><div><dt>電話番号</dt><dd><a href="tel:0580000000">058-000-0000</a> <small>（サンプル）</small></dd></div><div><dt>お受け取り</dt><dd>12月23日・24日・25日<br>店頭にて手渡し</dd></div></dl><p class="dummy-notice">※ 店舗情報と地図は練習用の架空データです。</p></div><div class="map-frame"><iframe title="架空店舗のサンプル地図" src="https://maps.google.com/maps?q=Gifu%20Japan&t=&z=12&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><span>Googleマップ表示例（岐阜市周辺）</span></div></div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#top">Pâtisserie <em>Noël</em></a><p>Christmas Cake Collection</p><small>本サイトはデザイン確認用のサンプルです。</small></footer>
+  <script src="christmas-cake-site.js"></script>
+</body>
+</html>
